@@ -1,0 +1,120 @@
+.today-temperature-card{
+  margin-left: 40px;
+    width: 455px;
+    height: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.time-heading{
+  font-size: 0.75rem;
+}
+
+.temperature-card{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature-circle{
+  display: flex;
+  align-items: center; 
+}
+
+.circle{
+  width: 205px;
+  height: 205px;
+  border-radius: 205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px solid rgb(253, 132, 59);
+  
+}
+
+.today-min-max{
+  display: flex;
+  justify-content: center;
+}
+
+.main-temperature{
+  font-size: 80px;
+  display: flex;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  color: rgb(253, 132, 59);
+}
+
+.main-degree{
+  display: flex;
+  align-self: flex-start;
+  font-size: 1.5rem;
+  color: rgb(253, 132, 59);
+}
+
+ .like{
+  font-size: 1.2rem;
+ }
+
+ .like > span{
+      color: rgb(253, 132, 59);
+   
+  }
+
+.cloud-wind-icon{
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: #00f; */
+    align-items: center;
+}
+
+.today-cloud-icon-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.today-cloud-icon{
+  display: flex;
+  justify-content: center;
+}
+
+.today-status{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.wind-circle{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  border: 3px solid #777777;
+  border-radius: 85px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wind-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wind-direction{
+  font-size: 0.7rem;
+}
+.wind-speed{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
