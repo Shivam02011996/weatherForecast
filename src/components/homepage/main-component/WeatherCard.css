@@ -1,0 +1,91 @@
+.four-weather-card{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.weather-card{
+  margin: 5%;
+  color: white;
+  display: flex;
+  background-color:#9999ff;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.heading-section{
+    align-self: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.temperature-data{
+  margin-top: 12px;
+  font-size: 75px;
+  line-height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.degree{
+   line-height: 0;
+  font-size: 15px;
+  vertical-align: super;
+}
+
+.feels-like{
+  font-weight: 100;
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  height: 10px;
+  box-sizing: border-box;
+}
+
+.extra-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.high-low-temperature{
+border-left: 0;
+margin-top: 12px;
+font-size: 20px;
+text-align: center; 
+display: flex;
+flex-direction: row;
+}
+.high-low-temperature :first-child{
+  border-right :1px solid #d7d7d7 ;
+}
+.high{
+  padding-right: 5px;
+}
+.low{
+  margin-left: 5px;
+}
+
+.pop-container{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-pop{
+  align-self: center;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button{
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  background-color: #9988ff;
+}
