@@ -1,0 +1,12 @@
+.bg-image{
+  background-image: url('https://raw.githubusercontent.com/pol-alok/weather-app-react/master/src/assets/2850815.jpg');
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-card-four{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding:10px;
+}
