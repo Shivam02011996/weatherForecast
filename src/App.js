@@ -5,7 +5,7 @@ import LoadingPage from './components/LoadingPage'
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <LoadingPage />
     </div>
   );
