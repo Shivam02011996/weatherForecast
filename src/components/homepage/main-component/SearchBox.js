@@ -17,7 +17,7 @@ export default function SearchBox(props){
     <input 
     className="input-box"
     type="text"
-    placeholder="Search by location..."
+    placeholder="Search by city name..."
     />
     <button
     className="submit-button"
