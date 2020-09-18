@@ -1,7 +1,7 @@
 .four-weather-card{
   display: flex;
   width: 50%;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -10,10 +10,11 @@
   color: white;
   display: flex;
   background-color:#9999ff;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   flex-direction: column;
   border-radius: 10px;
+
 }
 .heading-section{
     align-self: center;
@@ -84,8 +85,12 @@ flex-direction: row;
 }
 
 .button{
+  align-self: center;
   height: 40px;
   color: white;
   border-radius: 10px;
   background-color: #9988ff;
+  width: 100%;
+  font-weight: bold;
+  border: none;
 }
