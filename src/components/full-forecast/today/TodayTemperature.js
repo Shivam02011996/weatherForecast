@@ -60,7 +60,7 @@ export default function (props){
                   <div className="wind-content">
           <div className="wind-direction">{convertDegreeToDirection(props.fullWeatherReport.wind.deg)}
 </div>
-<div className="wind-speed">{props.fullWeatherReport.wind.speed}</div>
+<div className="wind-speed">{props.fullWeatherReport.wind.speed}(mph)</div>
                   </div>               
                 </div>
 
