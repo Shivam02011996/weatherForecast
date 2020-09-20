@@ -1,0 +1,7 @@
+.today-weather{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  padding-top: 50px;
+  justify-content: space-around;
+}
