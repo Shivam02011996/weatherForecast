@@ -1,0 +1,31 @@
+.environment-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  width: 110px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.environment-heading{
+  display: flex;
+  justify-content: center;
+  text-transform : capitalize;
+  font-size: 16px;
+}
+
+.environment-icon{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0%;
+  font-size: 1.2rem;
+}
+
+.environment-value{
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  
+}
