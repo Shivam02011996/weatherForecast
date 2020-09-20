@@ -8,6 +8,7 @@ import './FullForecast.css'
 
 export default function FullForecast(props) {
   let allReport = props;
+  console.log("call in props");
  console.log(props);
   return (
   <div>
@@ -17,7 +18,6 @@ export default function FullForecast(props) {
       <div className="city-name">{props.fullWeatherForecasts.city.name},{props.fullWeatherForecasts.city.country}
       </div>
       
-
     </div>
   <Router >
   <div className="full-forecasts">
