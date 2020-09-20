@@ -1,8 +1,54 @@
+.city-location{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
 .full-forecasts{
   margin-top: 20px;
-  /* background-color: #000; */
-  font-size: 2rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  border:none;
+  font-weight: bold;
 }
 .forecast-button{
   font-size: 1.5rem;
+}
+Link{
+  background-color: #000;
+}
+
+.active{
+  background-color: #0ff;
+}
+.nav-link{
+  display: block;
+}
+.report-button{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0px 5px;
+  text-decoration: none;
+  border-radius: 10px 10px 0px 0px;
+  border:0.1px solid white;
+  color: white;
+  transition-delay: 100ms;
+
+}
+.report-button:hover{
+  background-color: #fff;
+  text-decoration: none;
+  color: #999999;
+  transition-delay: 100ms;
+  
+}
+
+.report-button:focus{
+  background-color: #fff;
+  text-decoration: none;
+  color: #999999;
 }

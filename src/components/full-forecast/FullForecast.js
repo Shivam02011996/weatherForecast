@@ -1,36 +1,47 @@
 import React from 'react';
-import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, BrowserRouter as Router, Route, Switch,Redirect} from 'react-router-dom';
+import {  Link, BrowserRouter as Router, Route, Switch,Redirect} from 'react-router-dom';
 import Today from './today/Today'
 import Hourly from './hourly/Hourly'
-import TenDay from './10-day/TenDay'
+import FiveDay from './five-day/FiveDay'
 import './FullForecast.css'
 
 export default function FullForecast(props) {
   let allReport = props;
- 
+ console.log(props);
   return (
   <div>
+
+    <div className="city-location">
+      
+      <div className="city-name">{props.fullWeatherForecasts.city.name},{props.fullWeatherForecasts.city.country}
+      </div>
+      
+
+    </div>
   <Router >
-  <Nav fill variant="tabs" defaultActiveKey="/" className="full-forecasts">
-
-  <Nav.Item class="box">
-    <Nav.Link eventKey="link-1" className="forecast-button"><Link to="/today">Today </Link></Nav.Link>
-  </Nav.Item>
-
-
-  <Nav.Item class="box">
-    <Nav.Link eventKey="link-2" className="forecast-button"><Link to="/ten-day">5-day </Link></Nav.Link>
-  </Nav.Item>
-
-  <Nav.Item class="box">
-    <Nav.Link eventKey="link-3" className="forecast-button"><Link to="/hourly">Hourly </Link></Nav.Link>
-  </Nav.Item>
+  <div className="full-forecasts">
+    
+      <Link 
+        className="report-button"
+        to="/today"
+      >Today
+      </Link>
 
 
+      <Link 
+        className="report-button"
+        to="/five-day">Five Day Forecast
+      </Link>
 
-  </Nav>
+
+
+        <Link 
+          className="report-button"
+          to="/three-hourly">Three hourly Forecasts
+        </Link>
+
+  </div>
 
   <Switch> 
      <Redirect exact from="/" to="/today" />
@@ -40,19 +51,20 @@ export default function FullForecast(props) {
       path="/today"  
       render={()=>(<Today 
       fullWeatherReport={allReport.fullWeatherReport}
+      fullWeatherForecasts={allReport.fullWeatherForecasts}
       />)}
        />
 
     <Route 
-      path="/ten-day" 
-      render={()=>(<TenDay 
+      path="/five-day" 
+      render={()=>(<FiveDay 
       fullWeatherForecasts={allReport.fullWeatherForecasts}
       />)}
       
       />
 
 
-    <Route path="/hourly" 
+    <Route path="/three-hourly" 
       render={()=>(<Hourly
       fullWeatherForecasts={allReport.fullWeatherForecasts}
       />)}
