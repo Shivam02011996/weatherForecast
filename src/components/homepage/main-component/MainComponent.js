@@ -5,6 +5,8 @@ import SingleCity from './SingleCity'
 import './MainComponent.css'
 import FullForecast from '../../full-forecast/FullForecast';
 import kelvinToFahrenheit from '../utils/KelvinToFahrenheit'
+import {BrowserRouter as Router, Redirect} from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 
 export default class MainComponent extends React.Component{
   constructor (props){
@@ -16,8 +18,11 @@ export default class MainComponent extends React.Component{
     };
   }
 
+
   
   handleSubmit = (e)=>{
+
+    // this.routeChange();
     let fetchData = "";
     let isFullForecasts ;
     if(e.target.type === 'submit'){
@@ -28,6 +33,8 @@ export default class MainComponent extends React.Component{
           fetchData.then(response => response.json())
         .then((city1)=>{
           
+          
+
           let city = city1.list[0];
           
               return {
@@ -142,9 +149,18 @@ export default class MainComponent extends React.Component{
     return (<div>
       <SearchBox onSubmit={this.handleSubmit} error={this.state.message}/>
       <div className="error">{this.state.message}</div>
-
+<Router>
+  <Redirect to="#"/>
+        {/* {
+        this.state.isFullForecasts : 
+        (<Router>
+          <Redirect to="/today" />
+        </Router>)
+    :showBriefWeather
+        }
+         */}
       {this.state.isFullForecasts ? showFullForecasts : showBriefWeather}
-      
+      </Router>
     </div>)
   }
 }
