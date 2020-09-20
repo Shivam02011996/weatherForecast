@@ -45,7 +45,8 @@ export default class MainComponent extends React.Component{
                 feelsLike :parseInt(kelvinToFahrenheit(city.main.feels_like)),
                 imgSrc: "https://www.wunderground.com/static/i/c/v4/30.svg",
                 humidity: city.main.humidity,
-                wind: city.wind
+                wind: city.wind,
+                rain: 0
                             },
                 lists: city1,
                 
